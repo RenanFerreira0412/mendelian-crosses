@@ -1,7 +1,20 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %} {% block content %}
 
-{% block content %}
-<div class="container">
-    <p>Cruzamento Genético</p>
-</div>
+<main
+  class="d-flex flex-column justify-content-center align-items-center gap-5 font-monospace"
+>
+  <p class="fw-bolder fs-1 text-success">Calculadora Genética</p>
+  <div class="text-center fw-medium">
+    <p>
+      Identifique os genótipos resultantes do cruzamento genético entre dois
+      indivíduos.
+    </p>
+    <p>Selecione uma das Leis de Mendel para podermos começar.</p>
+  </div>
+
+  <a class="btn btn-outline-success" href="{{ url_for('main.form') }}"
+    >Realizar cruzamento</a
+  >
+</main>
+
 {% endblock %}

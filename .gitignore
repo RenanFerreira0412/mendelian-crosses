@@ -1,0 +1,4 @@
+# Ignore a pasta venv
+venv
+
+.vscode

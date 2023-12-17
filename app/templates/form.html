@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <form class="d-flex flex-column gap-4" method="post">
+    <div>
+      <label for="genotype1" class="form-label">Primeiro genótipo</label>
+      <input
+        type="text"
+        id="genotype1"
+        name="genotype1"
+        class="form-control border-success"
+        placeholder="Primeiro genótipo"
+        aria-describedby="genotype1HelpBlock"
+        required
+      />
+      <div id="genotype1HelpBlock" class="form-text">
+        Informe o genótipo do primeiro indivíduo. Ex: Aa, AA, aa, etc
+      </div>
+    </div>
+
+    <div>
+      <label for="genotype2" class="form-label">Primeiro genótipo</label>
+      <input
+        type="text"
+        id="genotype2"
+        name="genotype2"
+        class="form-control border-success"
+        placeholder="Segundo genótipo"
+        aria-describedby="genotype2HelpBlock"
+        required
+      />
+      <div id="genotype2HelpBlock" class="form-text">
+        Informe o genótipo do primeiro indivíduo. Ex: Aa, AA, aa, etc
+      </div>
+    </div>
+
+    <button class="btn btn-success">Cruzar</button>
+  </form>
+</div>
+{% endblock %}
