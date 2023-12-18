@@ -1,29 +1,17 @@
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request
 from app.main import main
 from app.utils import Utils
 
 # página inicial
-
-
 @main.route('/')
 def index():
     return render_template('index.html')
-
-
-# documentação sobre as leis de mendel
-@main.route('/leis-de-mendel')
-def laws():
-    return render_template('laws.html')
 
 
 # formulário para o cruzamento genético
 @main.route('/form')
 def form():
     return render_template('form.html')
-
-@main.route('/result')
-def result():
-    return render_template('result.html')
 
 
 # realizando o cruzamento genético
